@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/webp" href="logo1.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural recommendations</title>
+</head>
+
+<body>
+
+
+    <header class="animate__animated animate__fadeInDown">
+        <div class="logo">
+            <img src="logo1.png" alt="Icon" class="logo-icon"> Cultural Recs
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add.html">Add</a>
+            <a href="browse.html">Browse</a>
+        </nav>
+    </header>
+
+    <h1 class="animate__animated animate__pulse">CULTURAL RECOMMENDATIONS</h1>
+
+    <p>
+        Welcome! Here, everyone can share their cultural recommendations: music or podcasts to listen, films to watch, or shows to go and see.
+        <br>
+        No account, no social media — just bangers to discover and share.
+    </p>
+
+    <div class="buttons">
+        <button class="add" id="showFormBtn" onclick="window.location.href='add.html'">Add a recommendation</button>
+        <button class="find" onclick="window.location.href='browse.html'">Find a banger</button>
+    </div>
+
+
+    <div class="samples-container">
+        <div class="sample-card">
+            🎧 <strong>Suavemente</strong><br>Soolking
+        </div>
+        <div class="sample-card">
+            🎬 <strong>La Haine</strong><br>Mathieu Kassovitz
+        </div>
+        <div class="sample-card">
+            🎙 <strong>Le coeur sur la table</strong><br>Victoire Tuaillon
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Cultural Recs is a student project created by two passionate students to make sharing cultural recommendations easier and more accessible. It is quick and easy to suggest and discover!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" style="display:inline-flex; align-items:center; gap:0.3em;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:1em; height:1em; vertical-align:middle;">
+                        @cultural.recs
+                    </a>
+                    <a href="https://x.com/" target="_blank" style="display:inline-flex; align-items:center; gap:0.3em;">
+                        <img src="https://hexmos.com/freedevtools/svg_icons/brand/brand-x.svg" alt="X" style="width:1em; height:1em; vertical-align:middle;">
+                        @_culturalrecs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- 1️⃣ Charger Noise.js avant AWaves/index.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noisejs/2.1.0/perlin.min.js"></script>
+    <!-- 2️⃣ Ton script principal contenant AWaves -->
+    <script src="index.js"></script>
+</body>
+</html>

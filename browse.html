@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Recommendations</title>
+    <link rel="icon" href="logo1.png">
+    <link rel="stylesheet" href="browse.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo1.png" class="logo-icon">
+        Cultural Recs
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="add.html">Add</a>
+        <a href="browse.html">Browse</a>
+    </nav>
+</header>
+
+<h1>ALL RECOMMENDATIONS</h1>
+
+<div class="filters">
+    <label>Filter by category :</label>
+    <select id="filterSelect">
+        <option value="all">All</option>
+        <option value="Music">🎵 Music</option>
+        <option value="Film">🎬 Film</option>
+        <option value="Podcast">🎙 Podcast</option>
+        <option value="Exhibition">🖼 Exhibition</option>
+        <option value="Book">📚 Book</option>
+        <option value="Theatre">🎭 Theatre</option>
+        <option value="Dance">💃 Dance</option>
+        <option value="Circus">🎪 Circus</option>
+        <option value="Festival">🎉 Festival</option>
+        <option value="Concert">🎤 Concert</option>
+    </select>
+</div>
+
+<div id="cardsContainer" class="cards-container"></div>
+
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <h3 id="modalAuthor"></h3>
+        <p><strong>Category:</strong> <span id="modalCategory"></span></p>
+        <p id="modalDesc"></p>
+        <p id="modalLink"></p>
+        <p class="posted">Posted by <span id="modalName"></span></p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>About</h3>
+            <p>Cultural Recs is a student project created by two passionate students to make sharing cultural recommendations easier and more accessible. It is quick and easy to suggest and discover!</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <div class="social-links">
+<a href="https://www.instagram.com/" target="_blank" style="display:inline-flex; align-items:center; gap:0.3em;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    @cultural.recs
+</a>
+<a href="https://x.com/" target="_blank" style="display:inline-flex; align-items:center; gap:0.3em;">
+    <img src="https://hexmos.com/freedevtools/svg_icons/brand/brand-x.svg" alt="X">
+    @_culturalrecs
+</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="browse.js"></script>
+</body>
+</html>

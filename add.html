@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Recommendation</title>
+    <link rel="icon" href="logo1.png">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bgVideo">
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<header>
+    <div class="logo">
+        <img src="logo1.png" class="logo-icon">
+        Cultural Recs
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="add.html">Add</a>
+        <a href="browse.html">Browse</a>
+    </nav>
+</header>
+
+<h1>ADD A RECOMMENDATION </h1>
+
+<form id="recForm" method="POST">
+    <label>First name *  
+        <input type="text" id="name" required>
+    </label>
+
+    <label>Title *  
+        <input type="text" id="title" required>
+    </label>
+
+    <label>Artist / Author *  
+        <input type="text" id="author" required>
+    </label>
+
+    <label>Category *  
+        <select id="category" required>
+            <option value="">Choose...</option>
+            <option>🎵 Music</option>
+            <option>🎬 Film</option>
+            <option>🎙 Podcast</option>
+            <option>🖼 Exhibition</option>
+            <option>📚 Book</option>
+            <option>🎭 Theatre</option>
+            <option>💃 Dance</option>
+            <option>🎪 Circus</option>
+            <option>🎉 Festival</option>
+            <option>🎤 Concert</option>
+        </select>
+    </label>
+
+    <label>Description / Review *  
+        <textarea id="description" required></textarea>
+    </label>
+
+    <label>Link  
+        <input type="text" id="url">
+    </label>
+
+    <button type="submit">Submit</button>
+</form>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>About</h3>
+            <p>Cultural Recs is a student project created by two passionate students to make sharing cultural recommendations easier and more accessible.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <div class="social-links">
+<a href="https://www.instagram.com/" target="_blank" style="display:inline-flex; align-items:center; gap:0.3em;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    @cultural.recs
+</a>
+<a href="https://x.com/" target="_blank" style="display:inline-flex; align-items:center; gap:0.3em;">
+    <img src="https://hexmos.com/freedevtools/svg_icons/brand/brand-x.svg" alt="X">
+    @_culturalrecs
+</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="add.js"></script>
+
+<!-- SUCCESS POPUP -->
+<div id="successPopup" class="popup-hidden">
+    <div class="popup-box">
+        <h2>Merci !</h2>
+        <p>Your recommendation has been successfully submitted.</p>
+
+        <div class="popup-buttons">
+            <a href="index.html" class="popup-btn home-btn">Back to Home</a>
+            <button id="closePopup" class="popup-btn close-btn">Share another reco</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
